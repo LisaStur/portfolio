@@ -1,8 +1,8 @@
-import './App.css';
+import { Home } from './Home'
 
 const App = () => {
   return (
-    <p>Hello World!</p>
+    <Home />
   )
 }
 

@@ -8,6 +8,7 @@ export const Header = () => {
     <HeaderContainer>
       <VariousLinks />
       <HeaderHeader>Lisas firma</HeaderHeader>
+      <HeaderText>Lisa Sturegård</HeaderText>
       <HeaderText>sturegardlisa@gmail.com</HeaderText>
       <HeaderText>+46 732 64 24 54</HeaderText>
     </HeaderContainer>

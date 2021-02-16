@@ -16,7 +16,7 @@ export const StarPage = () => {
 const StartPageContainer = styled.section`
   display: flex;
   flex-direction: column;
-  background-color: rgb(249,228,183, 0.6);
+  background: linear-gradient(rgb(249,228,183, 0.3), rgb(249,228,183, 0.9));
   padding:  0 5%;
   margin: 25% 5% 5% 5%;
   border-radius: 10px;

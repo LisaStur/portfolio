@@ -6,22 +6,22 @@ export const StarPage = () => {
 
   return (
     <StartPageContainer>
-      <StyledLink to={'/assignments'}>Live Projects ➞</StyledLink>
-      <StyledLink to={'/hobby'}>Hobby Projects  ➞</StyledLink>
-      <StyledLink to={'/tech'}>Technologies  ➞</StyledLink>
-      <StyledLink to={'/contact'}>Contact  ➞</StyledLink>
+      <StyledNavLink to={'/assignments'}>Projects ➞</StyledNavLink>
+      <StyledNavLink to={'/hobby'}>Hobby projects  ➞</StyledNavLink>
+      <StyledNavLink to={'/tech'}>Tech  ➞</StyledNavLink>
+      <StyledNavLink to={'/cv'}>Life before code  ➞</StyledNavLink>
     </StartPageContainer>
   )
 }
 const StartPageContainer = styled.section`
   display: flex;
   flex-direction: column;
-  background: linear-gradient(rgb(249,228,183, 0.3), rgb(249,228,183, 0.9));
+  background: linear-gradient(rgb(249,228,183, 0.2), rgb(249,228,183, 0.9));
   padding:  0 5%;
   margin: 25% 5% 5% 5%;
   border-radius: 10px;
 `
-const StyledLink = styled(NavLink)`
+const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   color: black;
   font-family: 'Roboto', sans-serif;

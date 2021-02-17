@@ -1,21 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
-import { NavLink } from 'react-router-dom'
+import { BackToStart } from '../components/BackToStart'
 
 export const Tech = () => {
 
   return (
     <TechContainer>
-      <BackArrow to={'/'}>🠔 back</BackArrow>
+      <BackToStart />
       <TechHeader>Frontend</TechHeader>
       <TechInfo>
         JavaScript ES6<br />
         JSX<br />
         React<br />
+        React Native<br />
         Redux< br/>
         CSS<br />
         Styled Components<br />
-        React Native
       </TechInfo>
       <TechHeader>Backend</TechHeader>
       <TechInfo>
@@ -28,7 +28,8 @@ export const Tech = () => {
       <TechInfo>
         GitHub<br />
         API<br />
-        Visual Studio Code &amp; Terminal<br />
+        Visual Studio Code<br />
+        Terminal<br />
         Postman<br />
         MongoDB<br />
         Heruko<br />
@@ -43,7 +44,7 @@ export const Tech = () => {
 const TechContainer = styled.section`
   display: flex;
   flex-direction: column;
-  background: linear-gradient(rgb(249,228,183, 0.3), rgb(249,228,183, 0.9));
+  background: linear-gradient(rgb(249,228,183, 0.3), rgb(249,228,183, 1));
   padding:  0 5%;
   margin: 25% 5% 5% 5%;
   border-radius: 10px;
@@ -57,12 +58,4 @@ const TechHeader = styled.h2`
 const TechInfo = styled.p`
   font-family: 'Roboto', sans-serif;
   margin-block-start: 6px;
-`
-const BackArrow = styled(NavLink)`
-  display: flex;
-  text-decoration: none;
-  color: black;
-  font-family: 'Paprika', cursive;
-  justify-content: flex-end;
-  margin: 5% 0 0 0;
 `

@@ -5,7 +5,7 @@ import { Header } from './components/Header'
 import { StarPage } from './pages/StartPage'
 import { Assignments } from './pages/Assignments'
 import { Hobby } from './pages/Hobby'
-import { Contact } from './pages/Contact'
+import { Cv } from './pages/Cv'
 import { Tech } from './pages/Tech'
 
 
@@ -28,8 +28,8 @@ export const Home = () => {
           <Route path='/tech'>
             <Tech />
           </Route>
-          <Route path='/contact'>
-            <Contact />
+          <Route path='/cv'>
+            <Cv />
           </Route>
         </Switch>
       </HomePage>

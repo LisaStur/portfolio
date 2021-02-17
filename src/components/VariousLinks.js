@@ -8,15 +8,15 @@ export const VariousLinks = () => {
 
   return (
     <IconContainer>
-      <StyledLink href='https://www.linkedin.com/in/lisa-stureg%C3%A5rd-2624241/' target='blank'>
+      <StyledVariousLink href='https://www.linkedin.com/in/lisa-stureg%C3%A5rd-2624241/' target='blank'>
         <StyledIcon src={linkedin} alt='Linkedin'/>
-      </StyledLink>
-      <StyledLink href='https://github.com/LisaStur' target='blank'>
+      </StyledVariousLink>
+      <StyledVariousLink href='https://github.com/LisaStur' target='blank'>
         <StyledIcon src={github} alt='GutHub'/>
-      </StyledLink>
-      <StyledLink href='https://www.instagram.com/lisastur/' target='blank'>
+      </StyledVariousLink>
+      <StyledVariousLink href='https://www.instagram.com/lisastur/' target='blank'>
         <StyledIcon src={insta} alt='Instagram'/>
-      </StyledLink>
+      </StyledVariousLink>
     </IconContainer>
     
   )
@@ -27,7 +27,7 @@ const IconContainer = styled.div`
   justify-content: flex-end;
   margin: 5% 5% 0 0;
 `
-const StyledLink = styled.a`
+const StyledVariousLink = styled.a`
   display: flex;
   padding-left: 2%;
 `

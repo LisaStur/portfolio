@@ -8,9 +8,7 @@ export const Header = () => {
     <HeaderContainer>
       <VariousLinks />
       <HeaderHeader>Lisas firma</HeaderHeader>
-      <HeaderText>Lisa Sturegård</HeaderText>
-      <HeaderText>sturegardlisa@gmail.com</HeaderText>
-      <HeaderText>+46 732 64 24 54</HeaderText>
+      <HeaderText>User experience by showcasing the soul of the enterprise.</HeaderText>
     </HeaderContainer>
   )
 
@@ -23,11 +21,18 @@ const HeaderContainer = styled.section`
 const HeaderHeader = styled.h1`
   font-family: 'Paprika', cursive;
   font-size: 36px;
-  margin: 5% 0 5% 10%;
+  margin: 5% 0 5% 10%; 
+
+  @media (min-width: 668px) {
+    margin: 0 0 2% 10%; 
+  } 
 `
 const HeaderText = styled.p`
   font-family: 'Paprika', cursive;
-  font-size: 12px;
-  margin: 0 0 0 10%;
+  font-size: 14px;
+  margin: 0 10%;
   
+  @media (min-width: 668px) {
+    font-size: 17px;
+  } 
 `

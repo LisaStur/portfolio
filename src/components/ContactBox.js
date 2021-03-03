@@ -1,16 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { RowSpaceBetween, InfoText, ColumnContainer, StyledLink } from '../Style'
+import { RowSpaceEvenly, InfoText, ColumnContainer, StyledLink } from '../Style'
 
 export const ContactBox = () => {
 
   return (
-   <RowSpaceBetween>
-      <TechContainer>
-        <TechText>Phone: +46 732 64 24 54</TechText>
-        <TechText>E-mail: sturegardlisa@gmail.com</TechText>
-      </TechContainer>
-      <TechContainer>
+   <RowSpaceEvenly>
+      <ContactContainer>
       <TechText>GitHub: &nbsp;
         <StyledLink href='https://github.com/LisaStur' target='blank'>
           Lisa's GitHub
@@ -26,15 +22,19 @@ export const ContactBox = () => {
           Lisa's Insta
         </StyledLink>
       </TechText>
-      </TechContainer>
-    </RowSpaceBetween>
+      </ContactContainer>
+      <ContactContainer>
+        <TechText>Phone: +46 732 64 24 54</TechText>
+        <TechText>E-mail: sturegardlisa@gmail.com</TechText>
+      </ContactContainer>
+    </RowSpaceEvenly>
   )
 }
 
 const TechText = styled(InfoText)`
   margin: 0;
 `
-const TechContainer = styled(ColumnContainer)`
+const ContactContainer = styled(ColumnContainer)`
   padding-top: 24px;
   justify-content: flex-end;
 `

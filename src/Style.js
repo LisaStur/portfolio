@@ -32,6 +32,11 @@ export const RowSpaceBetween = styled.div`
   flex-direction: row;
   justify-content: space-between;
 `
+export const RowSpaceEvenly = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+`
 export const RowCenter = styled.div`
   display: flex;
   display: row;

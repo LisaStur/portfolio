@@ -1,13 +1,13 @@
 import React from 'react'
-import { SmallHeader, InfoText, ColumnContainer, BigText, RowSpaceBetween } from '../Style'
+import { SmallHeader, InfoText, ColumnContainer, BigText, RowSpaceEvenly } from '../Style'
 import styled from 'styled-components'
 
 export const TechBox = () => {
 
   return (
     <TechContainer>
-      <SmallHeader>Tech</SmallHeader>
-      <RowSpaceBetween>
+      <TechBig>Tech</TechBig>
+      <RowSpaceEvenly>
         <ColumnContainer>
           <TechHeader>Frontend</TechHeader>
           <InfoText>
@@ -43,7 +43,7 @@ export const TechBox = () => {
             Cloudinary<br />
           </InfoText>
         </ColumnContainer>
-      </RowSpaceBetween>
+      </RowSpaceEvenly>
     </TechContainer>
 
   )
@@ -54,4 +54,7 @@ const TechContainer = styled(ColumnContainer)`
 `
 const TechHeader = styled(BigText)`
   margin: 12px 0 0 0;
+`
+const TechBig = styled(SmallHeader)`
+  text-align: center;
 `

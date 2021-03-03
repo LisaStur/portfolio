@@ -26,6 +26,10 @@ const IconContainer = styled.div`
   flex-direction: row;
   justify-content: flex-end;
   margin: 5% 5% 0 0;
+    
+  @media (min-width: 668px) {
+    margin: 5% 5% -20px 0;
+  } 
 `
 const StyledVariousLink = styled.a`
   display: flex;
@@ -34,4 +38,8 @@ const StyledVariousLink = styled.a`
 const StyledIcon = styled.img`
   display: flex;
   width: 24px;
+
+  @media (min-width: 668px) {
+    width: 48px;
+  } 
 `

@@ -24,6 +24,7 @@ const HeaderHeader = styled.h1`
   margin: 5% 0 5% 10%; 
 
   @media (min-width: 668px) {
+    font-size: 42px;
     margin: 0 0 2% 10%; 
   } 
 `

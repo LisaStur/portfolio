@@ -17,11 +17,6 @@ export const ContactBox = () => {
           Lisa's LinkedIn
         </StyledLink>
       </TechText>
-      <TechText>Instagram: &nbsp;
-        <StyledLink href='https://www.instagram.com/lisastur/' target='blank'>
-          Lisa's Insta
-        </StyledLink>
-      </TechText>
       </ContactContainer>
       <ContactContainer>
         <TechText>Phone: +46 732 64 24 54</TechText>

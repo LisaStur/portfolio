@@ -1,5 +1,6 @@
 import React from 'react'
 import { AssignementBox } from '../components/AssignementBox'
+import { CareerBox } from '../components/CareerBox'
 import { ContactBox } from '../components/ContactBox'
 import { ProjectBox } from '../components/ProjectBox'
 import { TechBox } from '../components/TechBox'
@@ -19,11 +20,12 @@ export const StarPage = () => {
       </SmallScreen>
       <BiggerScreen>
         <ExtraContainer>
+          <CareerBox />
           <AssignementBox />
           <ProjectBox />
           <TechBox />
-          <ContactBox />
         </ExtraContainer>
+        <ContactBox />
       </BiggerScreen>
     </StyledSection>
   )

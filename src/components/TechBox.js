@@ -11,7 +11,7 @@ export const TechBox = () => {
         <ColumnContainer>
           <TechHeader>Frontend</TechHeader>
           <InfoText>
-            JavaScript ES6,
+            JavaScript ES6<br />
             JSX<br />
             React<br />
             React Native<br />

@@ -10,7 +10,7 @@ export const ProjectBox = () => {
 
   return (
     <ColumnContainer>
-      <SmallHeader>Hobby-Projects</SmallHeader>
+      <NoSmallHeader>Hobby-Projects</NoSmallHeader>
       <RowWrapContainer>
         <SmallerColumn>
           <AdaptedBigText>Guestbook</AdaptedBigText>
@@ -72,10 +72,19 @@ export const ProjectBox = () => {
 const RowWrapContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
+
+  @media (min-width: 1025px) {
+    flex-flow: column nowrap;
+  } 
 `
 const SmallerColumn = styled(ColumnContainer)`
   width: 45%;
   padding-right: 5%;
+
+  @media (min-width: 1025px) {
+    width: 100%;
+    padding: 0;
+  } 
 `
 const AdaptedBigText = styled(BigText)`
   margin: 5% 0 0 0;
@@ -83,4 +92,12 @@ const AdaptedBigText = styled(BigText)`
 const AdjustedHeart = styled.img`
   height: 80px;
   width: auto;
+`
+
+const NoSmallHeader = styled(SmallHeader)`
+  display: flex;
+
+  @media (min-width: 1025px) {
+    display: none;
+  } 
 `

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 export const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
-  background: linear-gradient(rgb(249,228,183, 0.2), rgb(249,228,183, 1));
+  background: linear-gradient(rgb(249,228,183, 0), rgb(249,228,183, 1));
   padding:  0 5% 5% 5%;
   margin: 25% 5% 5% 5%;
   border-radius: 10px;
@@ -12,9 +12,15 @@ export const StyledSection = styled.section`
   @media (min-width: 668px) {
     margin: 15% 5% 5% 5%;
   } 
+
+  @media (min-width: 1025px) {
+    background: linear-gradient(rgb(249,228,183, 0), rgb(249,228,183, 1));
+    margin: 5%;
+  } 
 `
+
 export const ExtraContainer = styled.div`
-  background: linear-gradient(rgb(249,228,183, 0.4), rgb(249,228,183, 1));
+  background: linear-gradient(rgb(249,228,183, 0), rgb(249,228,183, 1));
   margin-top: 2%;
   padding: 0 2%;
   border-radius: 10px;
@@ -36,6 +42,11 @@ export const RowSpaceEvenly = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+
+  @media (min-width: 1025px) {
+    flex-direction: column;
+    justify-content: start;
+  } 
 `
 export const RowCenter = styled.div`
   display: flex;
@@ -56,11 +67,20 @@ export const SmallHeader = styled.h2`
 export const InfoText = styled.p`
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  margin: 10px 0; 
+  margin: 10px 0;
+  
+  @media (min-width: 1025px) {
+    font-size: 18px;
+  }   
 `
 export const BigText = styled.p`
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
+
+  @media (min-width: 1025px) {
+    font-size: 20px;
+    font-weight: normal;
+  } 
 `
 export const StyledLink = styled.a`
   color: black;
@@ -112,5 +132,17 @@ export const BiggerScreen = styled.div`
   @media (min-width: 668px) {
     display: flex;
     flex-direction: column;
+  } 
+  @media (min-width: 1025px) {
+    display: none;
+  } 
+
+`
+export const BiggestScreen = styled.div`
+  display: none;
+
+  @media (min-width: 1025px) {
+    display: flex;
+    flex-direction: row;
   } 
 `

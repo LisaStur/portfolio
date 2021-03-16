@@ -8,7 +8,7 @@ export const AssignementBox = () => {
 
   return (
     <ColumnContainer>
-      <RowSpaceBetween>
+      <BiggestScreenReverse>
         <AdaptedColumn>
           <SmallHeader>Projects</SmallHeader>
           <InfoText>
@@ -17,18 +17,44 @@ export const AssignementBox = () => {
           <StyledLink href='https://kanten.netlify.app/' target='blank'>Strandkanten site ➞</StyledLink> 
           <StyledLink href='https://github.com/LisaStur/kanten' target='blank'>Code on GitHub ➞</StyledLink> 
         </AdaptedColumn>
+        <ImageCenter>
         <StrandkantenImage src={kanten}/>
-      </RowSpaceBetween>
+        </ImageCenter>
+      </BiggestScreenReverse>
     </ColumnContainer>
   )
 }
 
+const BiggestScreenReverse = styled(RowSpaceBetween)`
+  @media (min-width: 1025px) {
+    display: flex;
+    flex-direction: column-reverse;
+  } 
+`
+
 const AdaptedColumn = styled(ColumnContainer)`
   width: 50%;
   padding: 24px 0;
+
+  @media (min-width: 1025px) {
+    width: 100%;
+  } 
 `
 const StrandkantenImage = styled.img`
   height: 100px;
   width: auto;
   padding-top: 56px;
+
+  @media (min-width: 1025px) {
+    width: 300px;
+    height: auto;
+    padding: 0;
+  } 
+`
+const ImageCenter = styled.div`
+  display: flex;
+
+  @media (min-width: 1025px) {
+    justify-content: center;
+  } 
 `

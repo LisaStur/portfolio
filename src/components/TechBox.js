@@ -57,4 +57,8 @@ const TechHeader = styled(BigText)`
 `
 const TechBig = styled(SmallHeader)`
   text-align: center;
+
+  @media (min-width: 1025px) {
+    text-align: start;
+  } 
 `

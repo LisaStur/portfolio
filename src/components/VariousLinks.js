@@ -30,10 +30,18 @@ const IconContainer = styled.div`
   @media (min-width: 668px) {
     margin: 5% 5% -20px 0;
   } 
+
+  @media (min-width: 1025px) {
+    margin: 2% 0 0 0;
+  } 
 `
 const StyledVariousLink = styled.a`
   display: flex;
   padding-left: 2%;
+
+  @media (min-width: 1025px) {
+    padding-left: 10%;
+  } 
 `
 const StyledIcon = styled.img`
   display: flex;
@@ -41,5 +49,11 @@ const StyledIcon = styled.img`
 
   @media (min-width: 668px) {
     width: 48px;
+  } 
+
+  
+  @media (min-width: 1025px) {
+    height: 52px;
+    width: auto;
   } 
 `

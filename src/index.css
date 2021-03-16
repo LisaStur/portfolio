@@ -17,9 +17,13 @@ code {
 }
 
 @media(min-width: 668px) {
-
   body {
     background-image: url('assets/medium.jpg');
   }
+}
 
+@media(min-width: 1025px) {
+  body {
+    background-image: url('assets/test.jpg');
+  }
 }
